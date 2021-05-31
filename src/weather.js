@@ -5,11 +5,11 @@ class Weather {
     this.unit = unit;
   }
 
-  async WeatherInformation() {
+  async weatherInformation() {
     const response =  await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=${this.unit}&APPID=${this.apiKey}`,
     { mode: 'cors' });
     const information = await response.json();
-    return information.weather[0].main;
+    return information;
   }
 
 }

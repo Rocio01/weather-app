@@ -6,7 +6,6 @@
 
 
 h1 {
-  text-align: center;
   color: aliceblue;
 }
 
@@ -16,4 +15,16 @@ h1 {
 
 body {
    background-image: url("./images/thunder.jpg"); 
+}
+
+#city {
+  width: 27%;
+}
+
+input, select {
+  background-color: #bcbbc1 !important;
+}
+
+.weather-card, li {
+  background-color: #cecccd !important;
 }

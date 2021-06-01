@@ -12,6 +12,7 @@ class Display {
   }
  
 
+
   displayInfo(weather){
     const info = weather.weather[0];
     const fetchIcon = info.icon;
@@ -22,11 +23,11 @@ class Display {
     this.weatherMain.innerHTML = info.main;
     this.weatherDescription.innerHTML = `Description: ${info.description}.` ;
     this.icon.setAttribute("src", iconUrl);
-    this.temp.innerHTML =  `Temperature: ${weather.main.temp}&deg`;
-    this.feelsLike.innerHTML = `Feels like: ${weather.main.feels_like}&deg`;
+    this.temp.innerHTML =  `Temperature: ${weather.main.temp}`;
+    this.feelsLike.innerHTML = `Feels like: ${weather.main.feels_like}`;
     this.humidity.innerHTML = `Humidity: ${weather.main.humidity}%`;
-    this.tempMax.innerHTML = `Max temp at moment: ${weather.main.temp_max}&deg`;
-    this.tempMin.innerHTML = `Min temp at moment: ${weather.main.temp_min}&deg`;
+    this.tempMax.innerHTML = `Max temp at moment: ${weather.main.temp_max}`;
+    this.tempMin.innerHTML = `Min temp at moment: ${weather.main.temp_min}`;
   }
 
 }

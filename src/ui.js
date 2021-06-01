@@ -25,8 +25,8 @@ class Display {
     this.temp.innerHTML =  `Temperature: ${weather.main.temp}`;
     this.feelsLike.innerHTML = `Feels like: ${weather.main.feels_like}`;
     this.humidity.innerHTML = `Humidity: ${weather.main.humidity}%`;
-    this.tempMax.innerHTML = `Maximum temperature: ${weather.main.temp_max}`;
-    this.tempMin.innerHTML = `Minimum temperature: ${weather.main.temp_min}`;
+    this.tempMax.innerHTML = `Max temp at moment: ${weather.main.temp_max}`;
+    this.tempMin.innerHTML = `Min temp at moment: ${weather.main.temp_min}`;
   }
 
 }

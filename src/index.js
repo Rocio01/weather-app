@@ -4,7 +4,7 @@ import Weather from "./weather";
 import Display from "./ui";
 
 
-const weather = new Weather("Bogota");
+const weather = new Weather("Bogota", "metric");
 const ui = new Display();
 
 const buttonCheck = document.getElementById("city-form");
@@ -15,14 +15,15 @@ const weatherInformation = () => {
     ui.displayInfo(results);
     console.log(results)
   })
-  .catch(err => console.log(err));
+  .catch((e) => alert("city not found"));
 
 }
 
 buttonCheck.addEventListener("submit", (e) => {
   e.preventDefault();
   const city = document.getElementById("city").value;
-  weather.changeCity(city);
+  const unit = document.getElementById("unit").value;
+  weather.changeValues(city, unit);
   weatherInformation();
 });
 

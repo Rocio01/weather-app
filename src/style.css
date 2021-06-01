@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:cornflowerblue;
+}
+h1 {
+  text-align: center;
+}
+
+#weather-icon {
+  width: 20%;
+}
+

@@ -12,6 +12,10 @@ class Weather {
     return information;
   }
 
+  changeCity(city) {
+    this.city = city;
+  }
+
 }
 
 export {Weather as default};

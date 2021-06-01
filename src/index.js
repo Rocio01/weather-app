@@ -13,7 +13,6 @@ const weatherInformation = () => {
   weather.weatherInformation()
   .then(results => {
     ui.displayInfo(results);
-    console.log(results)
   })
   .catch((e) => alert("city not found"));
 

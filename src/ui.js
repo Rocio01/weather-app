@@ -20,13 +20,13 @@ class Display {
     
     this.city.innerHTML = `${weather.name} , ${weather.sys.country}.`; 
     this.weatherMain.innerHTML = info.main;
-    this.weatherDescription.innerHTML = `Description: ${info.description}` ;
+    this.weatherDescription.innerHTML = `Description: ${info.description}.` ;
     this.icon.setAttribute("src", iconUrl);
-    this.temp.innerHTML =  `Temperature: ${weather.main.temp}`;
-    this.feelsLike.innerHTML = `Feels like: ${weather.main.feels_like}`;
+    this.temp.innerHTML =  `Temperature: ${weather.main.temp}&deg`;
+    this.feelsLike.innerHTML = `Feels like: ${weather.main.feels_like}&deg`;
     this.humidity.innerHTML = `Humidity: ${weather.main.humidity}%`;
-    this.tempMax.innerHTML = `Max temp at moment: ${weather.main.temp_max}`;
-    this.tempMin.innerHTML = `Min temp at moment: ${weather.main.temp_min}`;
+    this.tempMax.innerHTML = `Max temp at moment: ${weather.main.temp_max}&deg`;
+    this.tempMin.innerHTML = `Min temp at moment: ${weather.main.temp_min}&deg`;
   }
 
 }

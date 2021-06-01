@@ -13,7 +13,10 @@ const weatherInformation = () => {
     .then((results) => {
       ui.displayInfo(results);
     })
-    .catch(alert('city not found'));
+    .catch((e) => {
+      console.log(e);
+      alert('city not found');
+    });
 };
 
 buttonCheck.addEventListener('submit', (e) => {

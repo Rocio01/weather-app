@@ -4,14 +4,17 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color:cornflowerblue;
-}
+
 h1 {
   text-align: center;
+  color: aliceblue;
 }
 
 #weather-icon {
   width: 20%;
 }
 
+body {
+  background-color: rgb(91, 99, 99);
+   background-image: url("./images/thunder.jpg"); 
+}

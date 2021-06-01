@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 h1 {
   color: aliceblue;
 }
@@ -14,17 +13,16 @@ h1 {
 }
 
 body {
-   background-image: url("./images/thunder.jpg"); 
+  background-image: url("./images/thunder.jpg");
 }
 
 #city {
   width: 27%;
 }
 
-input, select {
-  background-color: #bcbbc1 !important;
-}
-
-.weather-card, li {
+input,
+select,
+.weather-card,
+li {
   background-color: #cecccd !important;
 }

@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://github.com/Rocio01/weather-app/)
+[Live Demo Link](https://rocio01.github.io/weather-app/)
 
 ## Getting Started
 

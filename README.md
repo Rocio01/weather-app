@@ -1,4 +1,4 @@
-# Restaurant page
+# Weather App
 
 > A simple weather forecast site using the weather API from [Open Weather](https://openweathermap.org/)
 

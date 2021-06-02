@@ -3,6 +3,8 @@
 > A simple weather forecast site using the weather API from [Open Weather](https://openweathermap.org/)
 
 ![screenshot](./src/images/weather-app.PNG)
+![screenshot](./src/images/weather-app-1.PNG)
+![screenshot](./src/images/weather-app-2.PNG)
 
 ## Built With
 

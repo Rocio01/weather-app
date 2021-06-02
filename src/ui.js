@@ -26,6 +26,14 @@ class Display {
     this.humidity.innerHTML = `Humidity: ${weather.main.humidity}%`;
     this.tempMax.innerHTML = `Max temp at moment: ${weather.main.temp_max}`;
     this.tempMin.innerHTML = `Min temp at moment: ${weather.main.temp_min}`;
+
+    if (info.main === 'Clouds') {
+      document.body.style.backgroundImage = 'URL("../dist/images/cloud.png")';
+    } else if (info.main === 'Clear') {
+      document.body.style.backgroundImage = 'URL("../dist/images/clear.jpg")';
+    } else {
+      document.body.style.backgroundImage = 'URL("../dist/11d5d3bcc3eb23f5180a.jpg")';
+    }
   }
 }
 

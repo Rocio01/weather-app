@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><script defer src="main.js"></script></head>
+  <body>
+    <div class="container p-3">
+      <header>
+        <h1 class="text-center p-3">Weather App</h1>
+      </header>
+      <section>
+        <form id="city-form">
+          <div class="input-group mb-3">
+            <input type="text" id="city" class="form-control" placeholder="Enter your city" required>
+            <select class="form-select" id="unit" aria-label="Default select example">
+              <option value="metric"> Celsius </option>
+              <option value="imperial"> Fahrenheit </option>
+              <option value=""> Kelvin </option>
+            </select>
+            <button class="btn btn-success" type="submit"> Check </button>
+          </div>
+        </form>
+      </section>
+      <section id="weather-info" class="col d-flex justify-content-center">
+         
+         <div class="card" style="width: 18rem;">
+          
+          <div class="card-body weather-card">
+            <h2 id="city-name"></h2>
+            <img  id="weather-icon" alt="weather-icon">
+            <h3 class="card-text" id="weather-main"></h3>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" id="weather-description"></li>
+            <li class="list-group-item" id="weather-temp"></li>
+            <li class="list-group-item" id="weather-feelsLike"></li>
+            <li class="list-group-item" id="weather-humidity"></li>
+            <li class="list-group-item" id="weather-temp_max"></li>
+            <li class="list-group-item" id="weather-temp_min"></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+  </body>
+</html>

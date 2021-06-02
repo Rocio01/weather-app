@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: aliceblue;
+}
+
+#weather-icon {
+  width: 20%;
+}
+
+body {
+  background-image: url("./images/thunder.jpg");
+}
+
+#city {
+  width: 27%;
+}
+
+input,
+select,
+.weather-card,
+li {
+  background-color: #cecccd !important;
+}

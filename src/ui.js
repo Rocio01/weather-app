@@ -1,3 +1,9 @@
+import Clear from "./images/clear.jpg";
+import Cloud from "./images/cloud.png";
+import Thunder from "./images/thunder.jpg";
+import Mist from "./images/mist.jpg";
+import Snow from "./images/snow.jpg";
+
 class Display {
   constructor() {
     this.city = document.getElementById('city-name');
@@ -28,11 +34,15 @@ class Display {
     this.tempMin.innerHTML = `Min temp at moment: ${weather.main.temp_min}`;
 
     if (info.main === 'Clouds') {
-      document.body.style.backgroundImage = 'URL("../dist/images/cloud.png")';
+      document.body.style.backgroundImage =  `URL("${Cloud}")`;
     } else if (info.main === 'Clear') {
-      document.body.style.backgroundImage = 'URL("../dist/images/clear.jpg")';
-    } else {
-      document.body.style.backgroundImage = 'URL("../dist/11d5d3bcc3eb23f5180a.jpg")';
+      document.body.style.backgroundImage = `URL("${Clear}")`;
+    } else if (info.main === 'Mist') {
+      document.body.style.backgroundImage = `URL("${Mist}")`;
+    } else if (info.main === 'Snow') {
+      document.body.style.backgroundImage = `URL("${Snow}")`;
+    }  else {
+      document.body.style.backgroundImage = `URL("${Thunder}")`;
     }
   }
 }
